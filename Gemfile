@@ -8,6 +8,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'slim-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3'
