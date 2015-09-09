@@ -1,6 +1,5 @@
 h1= @content.title
 hr
 = raw @content.markdown
-- if current_user.id == params[:user_id]
-  = link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content), class: 'btn btn-primary'
+= link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content), class: 'btn btn-primary'
 = javascript_include_tag 'custom'

@@ -13,6 +13,9 @@
 class Content < ActiveRecord::Base
   belongs_to :user
 
+  validates :title, presence: true
+  validates :text,  presence: true
+
   def markdown
     GitHub::Markdown.render_gfm(text)
   end
