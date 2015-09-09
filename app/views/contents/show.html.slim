@@ -1,3 +1,4 @@
-p= @content.title
-p= @content.text
-= link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content)
+h1= @content.title
+hr
+= raw @content.markdown
+= link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content), class: 'btn btn-primary'
