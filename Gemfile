@@ -7,6 +7,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'font-awesome-rails'
 gem 'slim-rails'
 gem 'devise'
 
