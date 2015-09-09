@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'font-awesome-rails'
 gem 'slim-rails'
 gem 'devise'
+gem 'kramdown'
 
 group :development, :test do
   gem 'sqlite3'

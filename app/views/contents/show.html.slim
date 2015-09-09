@@ -1,3 +1,3 @@
 p= @content.title
-p= @content.text
+= raw Kramdown::Document.new(@content.text).to_html.gsub(/\n/,'<br />')
 = link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content)
