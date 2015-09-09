@@ -1,5 +1,6 @@
 = form_for(@content, url: user_contents_path(user_id: current_user)) do |f|
-  = f.label :title, 'Title' - if f.object.errors.messages[:title].present?
+  = f.label :title, 'Title'
+  - if f.object.errors.messages[:title].present?
     p.text-danger= "Title #{f.object.errors.messages[:title].first}"
   = f.text_field :title, placeholder: 'Title here', class: 'form-control'
   = f.label :text, 'Text'
