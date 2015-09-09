@@ -1,2 +1,4 @@
-h1 Contents#new
-p Find me in app/views/contents/new.html.slim
+= form_for(@content, url: user_contents_path(user_id: current_user)) do |f|
+  = f.text_field :title
+  = f.text_field :text
+  = f.submit 'Submit'

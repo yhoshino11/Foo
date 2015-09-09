@@ -1,2 +1,2 @@
-h1 Contents#index
-p Find me in app/views/contents/index.html.slim
+- @contents.each do |content|
+  p= link_to content.title, user_content_path(user_id: current_user, id: content)
