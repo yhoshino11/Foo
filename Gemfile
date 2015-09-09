@@ -10,7 +10,7 @@ gem 'turbolinks'
 gem 'font-awesome-rails'
 gem 'slim-rails'
 gem 'devise'
-gem 'kramdown'
+gem 'github-markdown'
 
 group :development, :test do
   gem 'sqlite3'
