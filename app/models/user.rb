@@ -23,6 +23,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :contents
+  has_one :profile
+
+  def country
+    c = GeoIP.new(Rails.root.join('GeoIP.dat')).country(current_sign_in_ip)
+    c_info = c.to_hash
+    c_info[:country_name]
+  end
 
   def owner?(content)
     content.user == self
