@@ -4,6 +4,7 @@
  *= require bootstrap-material-design/dist/css/material.min
  *= require bootstrap-material-design/dist/css/ripples.min
  *= require highlightjs/styles/github
+ *= require github-markdown-css/github-markdown
  *= require_tree .
  *= require_self
  */
@@ -13,4 +14,11 @@
 }
 #new_editor {
   display: none;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  /* padding: 30px; */
 }
