@@ -1,5 +1,6 @@
-h1= @content.title
-hr
-= raw @content.markdown
-= link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content), class: 'btn btn-primary'
+article.markdown-body
+  h1= @content.title
+  = raw @content.markdown
+  - if current_user.owner?(@content)
+    = link_to 'Edit', edit_user_content_path(user_id: current_user, id: @content), class: 'btn btn-primary'
 = javascript_include_tag 'custom'
