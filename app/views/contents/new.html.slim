@@ -6,5 +6,7 @@
   = f.label :text, 'Text'
   - if f.object.errors.messages[:text].present?
     p.text-danger= "Text #{f.object.errors.messages[:text].first}"
-  = f.text_area :text, placeholder: 'Text here', rows: 20, class: 'form-control'
+  = f.text_area :text, placeholder: 'Text here', rows: 20, class: 'form-control', id: 'new_editor'
+  #new_epiceditor
   = f.submit 'Create', class: 'btn btn-success'
+= javascript_include_tag 'new_editor'

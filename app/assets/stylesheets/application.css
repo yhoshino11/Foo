@@ -7,3 +7,10 @@
  *= require_tree .
  *= require_self
  */
+
+#editor {
+  display: none;
+}
+#new_editor {
+  display: none;
+}

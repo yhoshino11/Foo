@@ -3,4 +3,5 @@
 //= require bootstrap-material-design/dist/js/material.min
 //= require bootstrap-material-design/dist/js/ripples.min
 //= require highlightjs/highlight.pack.min
+//= require EpicEditor/epiceditor/js/epiceditor.min
 //= require_tree .
