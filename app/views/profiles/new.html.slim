@@ -1,0 +1,6 @@
+= form_for(@profile, url: profile_path(current_user), html: { multipart: true }) do |f|
+  = f.label :name,                class: 'form-control'
+  = f.text_field :name,           class: 'form-control', placeholder: 'name'
+  = f.label "I'm from ",          class: 'form-control'
+  = f.select :born_country,       options_for_select(@countries, @country), {},  class: 'form-control'
+  = f.submit 'Create', class: 'btn btn-primary'

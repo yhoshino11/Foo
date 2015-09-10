@@ -11,6 +11,10 @@ gem 'font-awesome-rails'
 gem 'slim-rails'
 gem 'devise'
 gem 'github-markdown'
+gem 'countries'
+gem 'gravatarify'
+
+gem 'geoip'
 
 group :development, :test do
   gem 'sqlite3'
