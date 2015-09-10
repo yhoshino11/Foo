@@ -1,2 +1,4 @@
 - @contents.each do |content|
-  h2= link_to content.title, user_content_path(user_id: content.user, id: content)
+  = link_to user_content_path(user_id: content.user, id: content) do
+    span.title= "#{content.title} - by #{content.user.profile.name}"
+  = gravatar_tag content.user.email, size: 28, secure: true, class: 'thumbnail user_icon'

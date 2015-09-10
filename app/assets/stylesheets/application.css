@@ -22,3 +22,15 @@
   margin: 0 auto;
   /* padding: 30px; */
 }
+
+.user_icon {
+  float: right;
+}
+span.title {
+  font-size: 18pt;
+  padding: 10px;
+}
+
+span.author {
+  padding-right: 8px;
+}
